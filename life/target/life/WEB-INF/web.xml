@@ -6,9 +6,25 @@
 
   <display-name>Life</display-name>
   
+	 <context-param>
+	  	<param-name>contextConfigLocation</param-name>
+	  	<param-value>classpath*:/spring/springForLife.xml</param-value>
+	  </context-param>
+  
+  
+  <listener>
+		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>  
+  </listener>
+  
+  	<!-- spring mvc -->
   	<servlet>
 		<servlet-name>springLife</servlet-name>
 		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+		
+		<init-param>
+			<param-name>contextConfigLocation</param-name>
+			<param-value>classpath*:/spring/springLife-servlet.xml</param-value>
+		</init-param>
 		
 		<load-on-startup>1</load-on-startup>
 	</servlet>
@@ -19,7 +35,7 @@
 		<url-pattern>/</url-pattern>
 	</servlet-mapping>
 	
-	
+	<!-- Alibaba 连接池 -->
 	<servlet>
 		<servlet-name>DruidStatView</servlet-name>
 		<servlet-class>com.alibaba.druid.support.http.StatViewServlet</servlet-class>
@@ -27,7 +43,7 @@
 	
 	
 	<servlet-mapping>  
-     <servlet-name> DruidStatView </servlet-name>  
+     <servlet-name>DruidStatView</servlet-name>  
      <url-pattern>/druid/*</url-pattern>  
   </servlet-mapping >  
 
