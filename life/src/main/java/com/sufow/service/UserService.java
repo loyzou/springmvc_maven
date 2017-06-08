@@ -5,11 +5,11 @@ import java.util.Map;
 
 
 import com.sufow.comm.VernaParam;
-import com.sufow.comm.VernaResult;
+import com.sufow.comm.CommResult;
 
 public interface UserService {
 	
-	public VernaResult queryTheUserInfo(VernaParam param);
+	public CommResult queryTheUserInfo(VernaParam param);
 	
 	/***
 	 * 查询用户列表

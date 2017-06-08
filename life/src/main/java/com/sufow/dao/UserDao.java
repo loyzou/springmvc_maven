@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.Map;
 
 import com.sufow.comm.VernaParam;
-import com.sufow.comm.VernaResult;
+import com.sufow.comm.CommResult;
 
 public interface UserDao {
 
@@ -19,5 +19,5 @@ public interface UserDao {
 	 * @param param
 	 * @return
 	 */
-	public VernaResult queryTheUserInfo(VernaParam param);
+	public CommResult queryTheUserInfo(VernaParam param);
 }

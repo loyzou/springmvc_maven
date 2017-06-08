@@ -6,7 +6,7 @@ import java.util.Map;
 import org.springframework.stereotype.Service;
 
 import com.sufow.comm.VernaParam;
-import com.sufow.comm.VernaResult;
+import com.sufow.comm.CommResult;
 import com.sufow.dao.impl.DecadeDao;
 import com.sufow.service.UserService;
 
@@ -24,7 +24,7 @@ public class UserServiceImpl extends DecadeDao implements UserService  {
 	/***
 	 * µÇÂ¼²éÑ¯
 	 */
-	public VernaResult queryTheUserInfo(VernaParam param) {
+	public CommResult queryTheUserInfo(VernaParam param) {
 		return getUserDao().queryTheUserInfo(param);
 	}
 

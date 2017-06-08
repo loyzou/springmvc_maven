@@ -15,10 +15,9 @@
 
 $(function(){
 	
-	alert(1);
 	
-	$.ajax({url:"/life/home/login/test",async:false,success:function(data){
-		alert(data);
+	$.ajax({url:"/life/home/login/test",success:function(data){
+		alert(test);
 			
 	}})
 	

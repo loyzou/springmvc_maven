@@ -8,7 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.sufow.comm.VernaParam;
-import com.sufow.comm.VernaResult;
+import com.sufow.comm.CommResult;
 import com.sufow.dao.UserDao;
 
 @Service
@@ -30,7 +30,7 @@ public class UserDaoImpl implements UserDao {
 	/**
 	 *查询用户信息
 	 */
-	public VernaResult queryTheUserInfo(VernaParam param) {
+	public CommResult queryTheUserInfo(VernaParam param) {
 		// TODO Auto-generated method stub
 		return null;
 	}
